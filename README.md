@@ -67,7 +67,7 @@ Sendo a primeira delas para mover a cobrinha para o lado, a segunda mover para c
 - os: Um módulo nativo do Python que fornece uma maneira de interagir com o sistema operacional, incluindo funções para manipulação de arquivos, diretórios e processos, bem como para obter informações sobre o ambiente do sistema. Foi usado no código, principalmente, na parte de settings.
 
 ## Conceitos apresentados na disciplina que foram aplicados:
-  Utilizamos diversos conceitos enquanto estávamos desenvolvendo o jogo, dentre eles:
+ Utilizamos diversos conceitos enquanto estávamos desenvolvendo o jogo, dentre eles:
 
 - Listas: Utilizadas na geração de bombas e na posição da cobra. No código rodar_jogo, por exemplo, a lista pixels armazena as coordenadas dos segmentos da cobra e é usada para evitar que a comida apareça em posições ocupadas pela cobra.
 - Tuplas: Usadas para identificar coordenadas, como na definição da posição da comida e da bomba. No código da classe Comida, por exemplo, as tuplas são usadas para armazenar as coordenadas (comida_x, comida_y) e definir a posição da comida.
@@ -76,7 +76,14 @@ Sendo a primeira delas para mover a cobrinha para o lado, a segunda mover para c
 - Laços: O jogo ocorre dentro de um laço while not fim_jogo. Esse laço mantém o jogo em execução, atualizando a posição da cobra, desenhando os elementos na tela e verificando eventos de entrada do jogador.
 
 ## Desafios e Lições:
-.....
+
+ No decorrer do processo de criação e aperfeiçoamento do jogo tivemos alguns desafios com relação ao uso das ferramentas novas apresentadas a serem utilizadas e problemas encontrados que poderiam atrapalhar na jogabilidade, por exemplo:
+
+•POO: A compreensão de como iríamos usar o POO(programação orientada ao objeto) no código nos custou tempo. De início utilizamos pouco do POO e conforme fomos entendendo mais sobre seus aspectos percebemos que precisávamos implementar mais de suas ferramentas ao código, não só por ser um aspecto obrigatório como para a organização do código em partes, facilitando o processo de alterações.
+
+•Problema de colisão: Nossa cobra pode morrer de três formas, ao se chocar com as laterais da tela, uma colisão com a bomba ou ao bater em si mesma, porém ao fazer o movimento por exemplo de ir para a direita e em seguida ir para a esquerda ela se chocava e morria. Esse movimento não deveria ser permitido no nosso jogo pois iria confundir a jogabilidade, para resolver isso adicionamos a regra de seguir para um lado sem que seu próximo movimento fosse seguir para o lado oposto, evitando a morte indesejada da cobra.
+
+•Ajustes na tela: A tela que definimos no começo tinha uma proporção pequena em relação ao aparelho em que o jogo rodaria. Além disso o código base já estava pronto antes de termos idealizado e criado um design para o jogo, o tamanho da tela, dos objetos coletáveis e da bomba já haviam sido escolhidos. Por termos tomado as medidas da tela cedo foi necessário revisar tudo novamente para termos um tamanho melhor e que se encaixasse no design que ia ser produzido. Além disso foi necessário ajustar qual parte seria "jogável"(a cobra pode passar sem morrer) e qual ela não poderia ultrapassar.
 
 
 
