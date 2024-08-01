@@ -76,7 +76,18 @@ Sendo a primeira delas para mover a cobrinha para o lado, a segunda mover para c
 - Laços: O jogo ocorre dentro de um laço while not fim_jogo. Esse laço mantém o jogo em execução, atualizando a posição da cobra, desenhando os elementos na tela e verificando eventos de entrada do jogador.
 
 ## Desafios e Lições:
-.....
+
+ No decorrer do processo de criação e aperfeiçoamento do jogo tivemos alguns desafios com relação ao uso das ferramentas novas apresentadas a serem utilizadas e problemas encontrados que poderiam atrapalhar na jogabilidade, por exemplo:
+
+•POO: A compreensão de como iríamos usar o POO(programação orientada ao objeto) no código nos custou tempo. De início utilizamos pouco do POO e conforme fomos entendendo mais sobre seus aspectos percebemos que precisávamos implementar mais de suas ferramentas ao código, não só por ser um aspecto obrigatório como para a organização do código em partes, facilitando o processo de alterações;
+
+•Problema de colisão: Nossa cobra pode morrer de três formas, ao se chocar com as laterais da tela, uma colisão com a bomba ou ao bater em si mesma, porém ao fazer o movimento por exemplo de ir para a direita e em seguida ir para a esquerda ela se chocava e morria. Esse movimento não deveria ser permitido no nosso jogo pois iria confundir a jogabilidade, para resolver isso adicionamos a regra de seguir para um lado sem que seu próximo movimento fosse seguir para o lado oposto, evitando a morte indesejada da cobra;
+
+•Ajustes na tela: A tela que definimos no começo tinha uma proporção pequena em relação ao aparelho em que o jogo rodaria. Além disso o código base já estava pronto antes de termos idealizado e criado um design para o jogo, o tamanho da tela, dos objetos coletáveis e da bomba já haviam sido escolhidos. Por termos tomado as medidas da tela cedo foi necessário revisar tudo novamente para termos um tamanho melhor e que se encaixasse no design que ia ser produzido. Além disso foi necessário ajustar qual parte seria "jogável"(a cobra pode passar sem morrer) e qual ela não poderia ultrapassar.
+
+ Esse foi nosso primeiro trabalho de IP em equipe, no começo não sabíamos praticamente nada sobre git, github ou pygame, então tomamos a decisão de determinar uma certa quantidade de dias para que todos conseguissem estudar sobre esses novos assuntos, o que foi um acerto de nossa parte pois se tivéssemos começado qualquer parte do código sem o conhecimento que precisávamos ter e aprendessemos durante a construção do código haveriam com certeza mais erros do que os que houveram. Esse aspecto pode parecer óbvio mas foi de extrema importância para o seguimento do projeto. 
+Durante nosso trabalho para a criação da parte funcional e visual do jogo adquirimos aprendizados únicos sobre a construção de um código, especificamente como fazer isso em equipe. Tomamos como lição a ideia de como é organizado um código e como isso pode ser melhorado usando os artifícios da POO e essa com certeza foi a lição mais valiosa que poderíamos adquirir durante este projeto, junto com a experiência de criar nosso primeiro jogo em equipe. 
+ Ademais, percebemos que é de extrema importância, principalmente se for um trabalho em conjunto, a clareza máxima do que o código está fazendo em todas as suas etapas, para evitar possíveis erros e facilitar a comunicação entre o grupo. Estes conhecimentos adquiridos pelo grupo com certeza serão uma bagagem essencial para futuros trabalhos, dentro e fora do âmbito acadêmico.
 
 
 
